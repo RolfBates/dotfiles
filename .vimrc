@@ -1,7 +1,8 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+let $PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
+let $PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
