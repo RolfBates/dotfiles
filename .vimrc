@@ -1,8 +1,6 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-let $PYTHONPATH .= "/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
-let $PATH .= "/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
@@ -16,9 +14,9 @@ Plugin 'terryma/vim-smooth-scroll'
 call vundle#end()
 filetype plugin indent on
 
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 
 syntax enable
 set encoding=utf-8
