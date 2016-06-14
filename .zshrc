@@ -1,11 +1,16 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/rolfbates/.oh-my-zsh
 unset PYTHONPATH
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export PYTHONPATH="/usr/local/lib/python3.5/site-packages:$PYTHONPATH"
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export GOPATH="$HOME/Documents/go"
 export MYSQL="/usr/local/mysql/bin"
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+# required for virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
 DEFAULT_USER="rolfbates"
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
